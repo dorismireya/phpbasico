@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fffffa;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+header.admin {
+	width: 100%;
+	/*overflow: hidden;*/
+	background-color: #168dca;
+	margin-bottom: 20px;
+}
+
+h1.logo {
+	color: #f2f2f2;
+	font-size: 50px;
+}
