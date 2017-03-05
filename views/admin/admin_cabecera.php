@@ -18,3 +18,4 @@
 		
 	</div>
 </header>
+<?php include 'menu.php'; ?>

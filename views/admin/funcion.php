@@ -5,7 +5,7 @@
 			<?php include 'admin_cabecera.php'; ?>
 
 			<article>
-				  <h1>BIENVENIDO AL SISTEMA DE ADMINISTRACION </h1>
+				  <h1>FUNCIONES.......</h1>
 				  
 			</article>
 			<?php include 'footer.php'; ?>

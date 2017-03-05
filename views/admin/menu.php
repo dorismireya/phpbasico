@@ -13,7 +13,7 @@ echo "<nav>";
 
 					foreach ($funciones as $funcion):
 						echo "<li>";
-							echo "<a href='#'>";
+							echo "<a href='".$funcion['accion']."'>";
 								echo $funcion['nombre_funcion'];
 							echo "</a>";
 						echo "</li>";
