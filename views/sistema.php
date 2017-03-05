@@ -5,6 +5,6 @@
 </head>
 <body>
 	<p>Aqui</p>
-	
+	<P>otra prueba</P>
 </body>
 </html>
