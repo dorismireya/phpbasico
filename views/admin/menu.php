@@ -1,7 +1,7 @@
 <?php 
 include '../../controllers/adminController.php'; 
 
-echo "<div>";
+echo "<nav>";
 	echo "<ul>";
 		$areas = getArea($_SESSION['id_usuario']);
 
@@ -22,5 +22,5 @@ echo "<div>";
 			echo "</li>";
 		endforeach;
 	echo "</ul>";
-echo "</div>";
+echo "</nav>";
 ?>

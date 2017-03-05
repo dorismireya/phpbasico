@@ -1,6 +1,6 @@
-<header class="admin">
+<header>
 	<div>
-		<h1 class="logo">Libreria Virtual</h1>
+		<h1>Libreria Virtual</h1>
 
 		<?php 
 			include '../../controllers/usuarioController.php'; 
@@ -12,10 +12,9 @@
 
 						endforeach
 		?>
-		<nav>
+		
 			<a href="../../controllers/logout.php">Cerrar Sesion</a>
 			
-		</nav>
 		
 	</div>
 </header>

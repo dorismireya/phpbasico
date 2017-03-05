@@ -12,14 +12,18 @@
 	<link type="text/css" rel="stylesheet" href="../../public/css/admin_estilo.css"/>
 </head>
 <body>
-	<?php include 'admin_cabecera.php'; ?>
-	<table width="100%">
-		<tr>
-			<td width="20%">
-				<?php include 'menu.php'; ?>
-			</td>
-		</tr>
-	</table>
-	<?php //ECHO $nombre   = $_SESSION['id_usuario'];  ?>
+	<div class="container">
+			<?php include 'admin_cabecera.php'; ?>
+			
+			<?php include 'menu.php'; ?>
+
+			<?php //ECHO $nombre   = $_SESSION['id_usuario'];  ?>
+			<article>
+				  <h1>London</h1>
+				  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+				  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+			</article>
+			<?php include 'footer.php'; ?>
+	</div>
 </body>
 </html>
