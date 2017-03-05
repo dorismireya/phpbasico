@@ -5,10 +5,16 @@
 	$contrasenia = $_REQUEST['contrasenia'];
 
 	if(isset($cuenta) && isset($contrasenia)) {
+
+		$conexion= Conexion();
+
 		$query = "SELECT * FROM usuario
 				  WHERE cuenta='$cuenta' AND contrasenia='$contrasenia'";
 
 		$respuesta_q = mysqli_query($conexion, $query);
+
+		cerrar_conexion($conexion);
+		
 
 		$nfilas = mysqli_num_rows($respuesta_q);
 
@@ -27,6 +33,7 @@
 			header('location:../views/admin/sistema.php');
 		}
 		else header('location:../views/login.php?error_usuario=si');
+
 	} 
 
 ?>

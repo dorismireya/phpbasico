@@ -13,7 +13,13 @@
 </head>
 <body>
 	<?php include 'admin_cabecera.php'; ?>
-	
-	<?php ECHO $nombre   = $_SESSION['id_usuario'];  ?>
+	<table width="100%">
+		<tr>
+			<td width="20%">
+				<?php include 'menu.php'; ?>
+			</td>
+		</tr>
+	</table>
+	<?php //ECHO $nombre   = $_SESSION['id_usuario'];  ?>
 </body>
 </html>
