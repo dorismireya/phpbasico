@@ -17,12 +17,14 @@
 
 		if($nfilas == 1){
 			$_SESSION['login_usr'] = $usuario['nombres'];
-			$_SESSION['login_apellidos'] = $usuario['apellidos'];
+			
 		}
 
 		if(isset($_SESSION['login_usr'])){
 			session_start();
-			header('location:../views/sistema.php');
+			$_SESSION['login_apellidos'] = $usuario['apellidos'];
+			$_SESSION['id_usuario'] = $usuario['id_usuario'];
+			header('location:../views/admin/sistema.php');
 		}
 		else header('location:../views/login.php?error_usuario=si');
 	} 
