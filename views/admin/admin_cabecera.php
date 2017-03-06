@@ -10,7 +10,7 @@
 						foreach ($usuarios as $usuario): 
 							echo "Rol: ".$usuario['nombre_tipo_usuario']." usuario:".$usuario['usuario'];
 
-						endforeach
+						endforeach;
 		?>
 		
 			<a href="../../controllers/logout.php">Cerrar Sesion</a>
