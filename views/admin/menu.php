@@ -1,5 +1,6 @@
 <?php 
 include '../../controllers/adminController.php'; 
+include '../../controllers/libroController.php'; 
 
 echo "<nav>";
 	echo "<ul>";
