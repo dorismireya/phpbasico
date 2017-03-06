@@ -16,4 +16,15 @@ function getListaLibro(){
 	return $lista;
 }
 
+//Busca la informacion del libro
+function buscarLibro($id_libro) {
+		$conexion= Conexion();
+		$query = "SELECT * FROM libro WHERE id_libro=$id_libro";
+
+		$res_query = mysqli_query($conexion, $query) or die('Revise su consulta de busqueda');
+		cerrar_conexion($conexion);
+
+		return mysqli_fetch_array($res_query, MYSQLI_ASSOC);
+}
+
 ?>

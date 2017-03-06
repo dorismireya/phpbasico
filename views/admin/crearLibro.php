@@ -10,16 +10,16 @@
 
 	                <form action="../../controllers/libroController.php" method="post">
 	                    <label>Titulo:</label>
-	                    <input type="text" name="titulo"><br/>
+	                    <input type="text" name="titulo" required><br/>
 
 	                    <label>Autor:</label>
-	                    <input type="text" name="autor"><br/>
+	                    <input type="text" name="autor" required><br/>
 	                    
 	                    <label>Categoria:</label>
-	                    <input type="text" name="categoria"><br/>
+	                    <input type="text" name="categoria" required><br/>
 
 	                    <label>Cantidad:</label>
-	                    <input type="text" name="cantidad"><br/>
+	                    <input type="text" name="cantidad" required><br/>
 
 	                    <label>Descripcion:</label>
 	                    <input type="text" name="descripcion"><br/>

@@ -33,9 +33,9 @@ include 'html.php';
 									echo "<td>".$libro['categoria_libro']."</td>";
 									echo "<td>".$libro['cantidad']."</td>";
 									echo "<td>".$libro['descripcion_libro']."</td>";
-									echo "<td>".$libro['ruta_imagen']."</td>";
+									//echo "<td>".$libro['ruta_imagen']."</td>";
 									echo "<td>";
-										//echo "<a href='usuarioEditar.php?id_usuario=".$usuario['id_usuario']."'>Editar</a>";
+										echo "<a href='editarLibro.php?id_libro=".$libro['id_libro']."'>Editar</a>";
 									echo "</td>";
 									echo "<td>";
 										echo "<a href='#'>Eliminar</a>";
@@ -43,7 +43,6 @@ include 'html.php';
 								echo "</tr>";
 							endforeach;
 						echo "</table>";
-						echo "<a href='#'>Nuevo Usuario</a>";
 					?>
 				  
 			</article>
