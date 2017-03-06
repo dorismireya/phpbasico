@@ -1,6 +1,5 @@
 <?php 
 include '../../controllers/adminController.php'; 
-include '../../controllers/libroController.php'; 
 
 echo "<nav>";
 	echo "<ul>";
@@ -8,8 +7,9 @@ echo "<nav>";
 
 		foreach ($areas as $area): 
 			echo "<li>";
-				echo $area['area'];
-				echo "<ul>";
+				echo "<a class='active' href='#''>".$area['area']."</a>";
+			echo "</li>";
+				//echo "<ul>";
 					$funciones = getFuncion($_SESSION['id_usuario'], $area['area']);
 
 					foreach ($funciones as $funcion):
@@ -19,8 +19,8 @@ echo "<nav>";
 							echo "</a>";
 						echo "</li>";
 					endforeach;
-				echo "</ul>";
-			echo "</li>";
+				//echo "</ul>";
+			//echo "</li>";
 		endforeach;
 	echo "</ul>";
 echo "</nav>";
