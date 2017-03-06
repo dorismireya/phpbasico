@@ -23,7 +23,7 @@
 	                    <input type="text" name="cuenta" required><br/>
 
 	                    <label>Contraseña:</label>
-	                    <input type="text" name="password" required><br/>
+	                    <input type="password" name="password" required><br/>
 
 	                    <label>Rol:</label>
 	                    <select name="rol">

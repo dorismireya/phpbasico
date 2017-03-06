@@ -36,5 +36,14 @@ function getListaUsuario(){
 	return $lista;
 }
 
+//Busca la informacion del usuario
+function buscarUsuario($id_usuario) {
+		$conexion= Conexion();
+		$query = "SELECT u.nombres AS nombres, u.apellidos AS apellidos, u.cuenta AS cuenta, u.contrasenia AS contrasenia, tu.id_tipo_usuario AS id_tipo_usuario, tu.nombre_tipo_usuario AS nombre_tipo_usuario FROM usuario u, tipo_usuario tu WHERE u.id_tipo_usuario=tu.id_tipo_usuario AND u.id_usuario='".$id_usuario."'";
 
+		$res_query = mysqli_query($conexion, $query) or die('Revise su consulta de busqueda');
+		cerrar_conexion($conexion);
+
+		return mysqli_fetch_array($res_query, MYSQLI_ASSOC);
+}
 ?>

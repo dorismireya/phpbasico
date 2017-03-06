@@ -23,7 +23,7 @@
 									echo "<td>".$usuario['nombre_tipo_usuario']."</td>";
 									echo "<td>".$usuario['cuenta']."</td>";
 									echo "<td>";
-										echo "<a href='usuarioEditar.php?id_usuario=".$usuario['id_usuario']."'>Editar</a>";
+										echo "<a href='editarUsuario.php?id_usuario=".$usuario['id_usuario']."'>Editar</a>";
 									echo "</td>";
 									echo "<td>";
 										echo "<a href='#'>Eliminar</a>";
