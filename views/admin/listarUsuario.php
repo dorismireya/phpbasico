@@ -26,7 +26,7 @@
 										echo "<a href='editarUsuario.php?id_usuario=".$usuario['id_usuario']."'>Editar</a>";
 									echo "</td>";
 									echo "<td>";
-										echo "<a href='#'>Eliminar</a>";
+										echo "<a href='../../controllers/eliminarUsuario.php?id_usuario=".$usuario['id_usuario']."'>Eliminar</a>";
 									echo "</td>";
 								echo "</tr>";
 							endforeach;
