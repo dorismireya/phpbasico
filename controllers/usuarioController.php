@@ -33,8 +33,8 @@ function getListaUsuario(){
 	    $lista[$i] =  mysqli_fetch_array($res_query_select, MYSQLI_ASSOC);
 	}
 
-
-
 	return $lista;
 }
+
+
 ?>

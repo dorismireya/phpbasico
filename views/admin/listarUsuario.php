@@ -31,7 +31,6 @@
 								echo "</tr>";
 							endforeach;
 						echo "</table>";
-						echo "<a href='#'>Nuevo Usuario</a>";
 					?>
 				  
 			</article>
