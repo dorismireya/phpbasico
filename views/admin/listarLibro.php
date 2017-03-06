@@ -38,7 +38,7 @@ include 'html.php';
 										echo "<a href='editarLibro.php?id_libro=".$libro['id_libro']."'>Editar</a>";
 									echo "</td>";
 									echo "<td>";
-										echo "<a href='#'>Eliminar</a>";
+										echo "<a href='../../controllers/eliminarLibro.php?id_libro=".$libro['id_libro']."'>Eliminar</a>";
 									echo "</td>";
 								echo "</tr>";
 							endforeach;
