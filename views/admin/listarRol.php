@@ -25,7 +25,7 @@ include 'html.php';
 									echo "<td>".$rol['nombre_tipo_usuario']."</td>";
 									
 									echo "<td>";
-										echo "<a href='editarLibro.php?id_libro=".$rol['id_tipo_usuario']."'>Ver</a>";
+										echo "<a href='listarFuncionesRol.php?id_tipo_usuario=".$rol['id_tipo_usuario']."&nombre_tipo_usuario=".$rol['nombre_tipo_usuario']."'>Ver</a>";
 									echo "</td>";
 									
 								echo "</tr>";
