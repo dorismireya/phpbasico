@@ -29,7 +29,10 @@ include 'html.php';
 
 					 		foreach ($libros as $libro): 
 								echo "<tr>";
-									echo "<td>".$libro['titulo_libro']."</td>";
+									echo "<td>";
+										echo "<img src='../../".$libro['ruta_imagen']."' border='0' width='50px'>";
+										echo $libro['titulo_libro'];
+									echo "</td>";
 									echo "<td>".$libro['autor_libro']."</td>";
 									echo "<td>".$libro['categoria_libro']."</td>";
 									echo "<td>".$libro['cantidad']."</td>";
