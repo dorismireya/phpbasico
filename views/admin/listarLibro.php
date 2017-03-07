@@ -21,7 +21,7 @@ include 'html.php';
 					  			echo "<th>Categoria</th>";
 					  			echo "<th>Cantidad</th>";
 					  			echo "<th>Descripcion</th>";
-					  			//echo "<th>Imagen</th>";
+					  			echo "<th></th>";
 					  			echo "<th></th>";
 					  			echo "<th></th>";
 					  			echo "<th></th>";
@@ -34,13 +34,16 @@ include 'html.php';
 									echo "<td>".$libro['categoria_libro']."</td>";
 									echo "<td>".$libro['cantidad']."</td>";
 									echo "<td>".$libro['descripcion_libro']."</td>";
-									//echo "<td>".$libro['ruta_imagen']."</td>";
 									echo "<td>";
 										echo "<a href='editarLibro.php?id_libro=".$libro['id_libro']."'>Editar</a>";
 									echo "</td>";
 									
 									echo "<td>";
 										echo "<a href='../../controllers/eliminarLibro.php?id_libro=".$libro['id_libro']."'>Eliminar</a>";
+									echo "</td>";
+
+									echo "<td>";
+										echo "<a href='subirImagen.php?id_libro=".$libro['id_libro']."'>Imagen</a>";
 									echo "</td>";
 								echo "</tr>";
 							endforeach;
