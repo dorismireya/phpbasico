@@ -2,6 +2,7 @@
 	<div>
 		<h1>Libreria Virtual</h1>
 
+		<h5 style="text-align: left;">
 		<?php 
 			include '../../controllers/usuarioController.php'; 
 
@@ -12,8 +13,8 @@
 
 						endforeach;
 		?>
-		
-			<a href="../../controllers/logout.php">Cerrar Sesion</a>
+		</h5>
+			<h5 style="text-align: right;"><a href="../../controllers/logout.php">Cerrar Sesion</a></h5>
 			
 		
 	</div>

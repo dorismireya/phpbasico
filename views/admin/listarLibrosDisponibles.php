@@ -10,10 +10,10 @@ include 'html.php';
 			<?php include 'admin_cabecera.php'; ?>
 
 			<article>
-				  <h1>LISTAR LIBROS </h1>
+				  <h1>LISTAR LIBROS DISPONIBLES PARA COMPRA</h1>
 				  <?php  
 
-					  	$libros = getListaLibro();
+					  	$libros = getListaLibroDisponible();
 					  	echo "<table width='100%'>";
 					  		echo "<tr>";
 					  			echo "<th>Titulo</th>";
@@ -36,12 +36,9 @@ include 'html.php';
 									echo "<td>".$libro['descripcion_libro']."</td>";
 									//echo "<td>".$libro['ruta_imagen']."</td>";
 									echo "<td>";
-										echo "<a href='editarLibro.php?id_libro=".$libro['id_libro']."'>Editar</a>";
+										echo "<a href='nuevaCompra.php?id_libro=".$libro['id_libro']."'>Comprar</a>";
 									echo "</td>";
 									
-									echo "<td>";
-										echo "<a href='../../controllers/eliminarLibro.php?id_libro=".$libro['id_libro']."'>Eliminar</a>";
-									echo "</td>";
 								echo "</tr>";
 							endforeach;
 						echo "</table>";
