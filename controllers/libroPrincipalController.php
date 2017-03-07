@@ -1,6 +1,6 @@
 <?php 
 
-
+require 'conexionDB.php';
 //Lista los libros por categoria y titulo de libro
 function getListaLibro(){
 	$conexion= Conexion();
